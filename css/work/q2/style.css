@@ -10,7 +10,7 @@ q3のcssはq3フォルダの中のcssファイルに記述してください */
 }
 
 .cal_calculate_table th,
-td {
+.cal_calculate_table td {
   /* 実線 */
   border: solid 1px;
   border-color: #dedede;

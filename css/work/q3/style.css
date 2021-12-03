@@ -14,7 +14,7 @@ q4のcssはq4フォルダの中のcssファイルに記述してください */
   position: relative;
 }
 
-.q3_gray_box .q3_box {
+.q3_box {
   width: 100px;
   height: 100px;
   font-size: 30px;
@@ -98,4 +98,12 @@ q4のcssはq4フォルダの中のcssファイルに記述してください */
   position: fixed;
   right: 50px;
   bottom: 50px;
+}
+
+/* 矢印の位置を上下左右中央に修正 */
+.q3_position_fixed::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
