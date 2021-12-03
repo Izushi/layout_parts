@@ -1,5 +1,42 @@
 @charset "UTF-8";
 
-
 /* q2が終わったら
 q3のcssはq3フォルダの中のcssファイルに記述してください */
+
+.cal_calculate_table {
+  /* セルの均一化 */
+  table-layout: fixed;
+  width: 100%;
+}
+
+.cal_calculate_table th,
+td {
+  /* 実線 */
+  border: solid 1px;
+  border-color: #dedede;
+}
+
+.cal_calculate_table th {
+  line-height: 26px;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  background-color: #2244aa;
+}
+
+.cal_calculate_table td {
+  line-height: 22px;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 偶数番目のtrだけ色を付ける */
+.cal_calculate_table tbody tr:nth-child(2n) {
+  background-color: #ecf1f2;
+}
+
+/* 最後のtrのborder-topを破線に */
+.cal_calculate_table tbody tr:last-child {
+  border-top: dashed 2px;
+}

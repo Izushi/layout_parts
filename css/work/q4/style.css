@@ -3,3 +3,57 @@
 
 /* q4が終わったら
 q5のcssはq5フォルダの中のcssファイルに記述してください */
+
+/* 親要素にtext-align: centerを指定すると、子要素の文章も中央寄せされる */
+.q4_text_align_center {
+  text-align: center;
+}
+
+/* pのようなブロック要素はtext-align: centerで中央寄せできないためインラインブロック要素に変更  */
+.q4_inline_block {
+  display: inline-block;
+}
+
+.q4_margin_0_auto {
+  margin: 0 auto;
+}
+
+.q4_table {
+  /* カラムを包含するコンテナにdisplay: table */
+  display: table;
+}
+
+.q4_table_element {
+  /* 各カラムにdisplay: table-cell; */
+  display: table-cell;
+  /* カラムを中央寄せできる */
+  vertical-align: middle;
+}
+
+.q4_flex {
+  display: flex;
+  /* flexを左右に動かす */
+  justify-content: center;
+  /* flexを上下に動かす */
+  align-items: center;
+}
+
+.q4_relative_box {
+  position: relative;
+}
+
+.q4_fixed_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.q4_flexible_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
