@@ -1,1 +1,38 @@
 @charset "UTF-8";
+
+.q6_speech_balloon_box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.q6_speech_balloon {
+  position: relative;
+  width: 550px;
+  padding: 20px;
+  border: 5px solid #222;
+  border-radius: 30px;
+  margin-left: 35px;
+  word-break: break-all;
+  box-sizing: border-box;
+}
+
+.q6_speech_balloon:before {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: -38px;
+  border: 20px solid transparent;
+  border-right: 20px solid #FFF;
+  z-index: 2;
+}
+
+.q6_speech_balloon:after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: -45px;
+  border: 20px solid transparent;
+  border-right: 20px solid #222;
+  z-index: 1;
+}
