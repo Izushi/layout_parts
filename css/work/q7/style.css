@@ -2,7 +2,9 @@
 
 .q6_speech_balloon_box {
   display: flex;
+  /* 左右中央寄せ */
   justify-content: center;
+  /* 上下一番下 */
   align-items: flex-end;
 }
 
@@ -13,10 +15,12 @@
   border: 5px solid #222;
   border-radius: 30px;
   margin-left: 35px;
+  /* 改行文字揃え */
   word-break: break-all;
-  box-sizing: border-box;
+  /* paddingとborderを高さと幅に含める box-sizing: border-box; */
 }
 
+/* 擬似要素で共通するスタイルはまとめる */
 .q6_speech_balloon::before,
 .q6_speech_balloon::after {
   content: "";

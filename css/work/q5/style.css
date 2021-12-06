@@ -10,7 +10,7 @@ q6のcssはq6フォルダの中のcssファイルに記述してください */
   clear: both;
 }
 
-.q5_width_400px {
+.q5_text_width {
   width: 400px;
 }
 
@@ -25,7 +25,6 @@ q6のcssはq6フォルダの中のcssファイルに記述してください */
 
 .q5_table {
   display: table;
-  width: 100%;
 }
 
 .q5_table_cell {
@@ -52,10 +51,6 @@ q6のcssはq6フォルダの中のcssファイルに記述してください */
 .q5_flex {
   display: flex;
   justify-content: space-between;
-}
-
-.q5_margin_left_60px:not(:first-child) {
-  margin-left: 60px;
 }
 
 /* calcでwidth100％を三等分し、幅を50px */
