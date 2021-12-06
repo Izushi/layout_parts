@@ -17,22 +17,22 @@
   box-sizing: border-box;
 }
 
-.q6_speech_balloon:before {
+.q6_speech_balloon::before,
+.q6_speech_balloon::after {
   content: "";
   position: absolute;
   bottom: 25px;
-  left: -38px;
   border: 20px solid transparent;
+}
+
+.q6_speech_balloon::before {
+  left: -38px;
   border-right: 20px solid #FFF;
   z-index: 2;
 }
 
-.q6_speech_balloon:after {
-  content: "";
-  position: absolute;
-  bottom: 25px;
+.q6_speech_balloon::after {
   left: -45px;
-  border: 20px solid transparent;
   border-right: 20px solid #222;
   z-index: 1;
 }

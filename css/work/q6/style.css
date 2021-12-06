@@ -14,7 +14,6 @@ q7のcssはq7フォルダの中のcssファイルに記述してください */
 .q6_image_box {
   overflow: hidden;
   width: 300px;
-  height: 201.8px;
   position: relative;
   cursor: pointer;
 }
@@ -41,7 +40,8 @@ q7のcssはq7フォルダの中のcssファイルに記述してください */
   position: absolute;
   bottom: -100%;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 8));
+  /* グラデーションの向き、開始色、終了色 */
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .8));
   transition: all 0.5s;
 }
 
@@ -49,7 +49,6 @@ q7のcssはq7フォルダの中のcssファイルに記述してください */
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 0;
   padding: 20px;
   color: #fff;
   box-sizing: border-box;
@@ -62,9 +61,13 @@ q7のcssはq7フォルダの中のcssファイルに記述してください */
 
 /* スクロールアニメーション */
 
+.q6_scroll_animation_box {
+  width: 960px;
+  overflow: hidden;
+}
+
 .q6_scroll_animation_text {
   width: 960px;
-  height: 540px;
   padding: 80px 0;
   box-sizing: border-box;
 }
@@ -77,11 +80,11 @@ q7のcssはq7フォルダの中のcssファイルに記述してください */
 }
 
 @keyframes slidein {
-  from {
+  0% {
     transform: translateX(100%);
   }
 
-  to {
+  100% {
     transform: translateX(-100%);
   }
 }

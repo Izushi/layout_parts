@@ -58,6 +58,7 @@ q6のcssはq6フォルダの中のcssファイルに記述してください */
   margin-left: 60px;
 }
 
+/* calcでwidth100％を三等分し、幅を50px */
 .q5_calc {
   width: calc((100% - 50px) / 3);
 }
