@@ -30,13 +30,11 @@
 }
 
 .q6_speech_balloon::before {
-  left: -38px;
-  border-right: 20px solid #FFF;
-  z-index: 2;
+  left: -45px;
+  border-right: 20px solid #222;
 }
 
 .q6_speech_balloon::after {
-  left: -45px;
-  border-right: 20px solid #222;
-  z-index: 1;
+  left: -38px;
+  border-right: 20px solid #FFF;
 }
